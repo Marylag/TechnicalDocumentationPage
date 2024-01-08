@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html land="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>The Python Tutorial</header>
+      <ul>
+        <li>
+          <a class="nav-link" href="#Python_is_just_the_language_for_you">Python is just the language for you</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Using_the_Python_Interpreter">Using the Python Interpreter</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Input_and_Output">Input and Output</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Errors_and_Exceptions">Errors and Exceptions</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Classes">Classes</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#More_Control_Flow_Tools">More Control Flow Tools</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Reference">Reference</a>
+        </li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+<section class="main-section" id="Python_is_just_the_language_for_you">
+  <header>Python is just the language for you</header>
+  <article>
+  <p>Python is simple to use, but it is a real programming language, offering much more structure and support for large programs than shell scripts or batch files can offer. On the other hand, Python also offers much more error checking than C, and, being a very-high-level language, it has high-level data types built in, such as flexible arrays and dictionaries. Because of its more general data types Python is applicable to a much larger problem domain than Awk or even Perl, yet many things are at least as easy in Python as in those languages.</p>
+    <p>Python enables programs to be written compactly and readably. Programs written in Python are typically much shorter than equivalent C, C++, or Java programs, for several reasons:</p>
+<ul>
+  <li>the high-level data types allow you to express complex operations in a single statement;</li>
+              <li>statement grouping is done by indentation instead of beginning and ending brackets;</li>
+              <li>no variable or argument declarations are necessary.</li>
+</ul>
+</article>
+</section>
+<section class="main-section" id="Using_the_Python_Interpreter">
+  <header>Using the Python Interpreter</header>
+  <article>
+  <p>The Python interpreter is usually installed as <code>/usr/local/bin/python3.11</code> on those machines where it is available; putting <code>/usr/local/bin</code> in your Unix shell’s search path makes it possible to start it by typing the command:</p>
+<div class="highlight">python3.11</div>
+<p>By default, Python source files are treated as encoded in UTF-8. In that encoding, characters of most languages in the world can be used simultaneously in string literals, identifiers and comments — although the standard library only uses ASCII characters for identifiers, a convention that any portable code should follow. To display all these characters properly, your editor must recognize that the file is UTF-8, and it must use a font that supports all the characters in the file.</p>
+</article>
+</section>
+<section class="main-section" id="Input_and_Output">
+  <header>Input and Output</header>
+  <article>
+  <p>There are several ways to present the output of a program; data can be printed in a human-readable form, or written to a file for future use. This chapter will discuss some of the possibilities.</p>
+  <ul>
+    <li>To use formatted string literals, begin a string with <code>f</code> or <code>F</code> before the opening quotation mark or triple quotation mark. Inside this string, you can write a Python expression between <code>{</code> and <code>}</code> characters that can refer to variables or literal values.</li>
+    <li>The <code>str.format()</code> method of strings requires more manual effort. You’ll still use <code>{</code> and <code>}</code> to mark where a variable will be substituted and can provide detailed formatting directives, but you’ll also need to provide the information to be formatted.</li>
+    <li>Finally, you can do all the string handling yourself by using string slicing and concatenation operations to create any layout you can imagine. The string type has some methods that perform useful operations for padding strings to a given column width.</li>
+  </ul>
+  </article>
+</section>
+<section class="main-section" id="Errors_and_Exceptions">
+  <header>Errors and Exceptions</header>
+  <article>
+  <p>Until now error messages haven’t been more than mentioned, but if you have tried out the examples you have probably seen some. There are (at least) two distinguishable kinds of errors: syntax errors and exceptions.</p>
+  </article>
+</section>
+<section class="main-section" id="Classes">
+  <header>Classes</header>
+  <article>
+  <p>Classes provide a means of bundling data and functionality together. Creating a new class creates a new type of object, allowing new instances of that type to be made. Each class instance can have attributes attached to it for maintaining its state. Class instances can also have methods (defined by its class) for modifying its state.</p>
+  </article>
+</section>
+<section class="main-section" id="More_Control_Flow_Tools">
+  <header>More Control Flow Tools</header>
+  <article>
+<p>Perhaps the most well-known statement type is the <code>if</code> statement.</p>
+<p>The for statement in Python differs a bit from what you may be used to in C or Pascal. Rather than always iterating over an arithmetic progression of numbers (like in Pascal), or giving the user the ability to define both the iteration step and halting condition (as C), Python’s for statement iterates over the items of any sequence (a list or a string), in the order that they appear in the sequence.</p>
+<p>If you do need to iterate over a sequence of numbers, the built-in function <code>range()</code> comes in handy.</p>
+<p>The break statement breaks out of the innermost enclosing <code>for</code> or <code>while</code> loop.</p>
+</article>
+</section>
+<section class="main-section" id="Reference">
+<header>Reference</header>
+  <ul>
+    <li>
+      All the documentation in this page is taken from <a href="https://docs.python.org/3/tutorial/index.html" target="_blank">Python</a>.
+    </li>
+  </ul>
+</section>
+    </main>
+  </body>
+</html>
